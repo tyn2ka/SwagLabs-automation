@@ -24,7 +24,7 @@ public class SwagLabsResults extends BasePage {
     public boolean isAt() {
         getLogger().info("Checking if search result page is opened");
         return getWait().until(ExpectedConditions.visibilityOfElementLocated(SELECTOR_RESULTS)).isDisplayed();
-        //czekaj tak dlugo az element bedzie widoczny
+        //wait and go ached when element will be visible
     }
 
     public boolean isError() {
